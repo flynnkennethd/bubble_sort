@@ -1,7 +1,7 @@
 def bubble_sort(array)
   placeholder = 0 
-  (array.length).times do
-    for i in 0..(array.length - 2) do 
+  for e in (array.length - 1).downto(0) do
+    for i in 0..(e - 1) do 
       if array[i] > array [i + 1]
         placeholder = array[i]
         array[i] = array [i + 1]
